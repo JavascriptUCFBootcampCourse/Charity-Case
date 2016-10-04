@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Charity Case</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon-96x96.png">
+    <!-- theme stylesheet -->
+    <link rel="stylesheet" href="css/style.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/padding_margin.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  
+  </head>
+  <body data-spy="scroll" data-target="#navigation" data-offset="120">
+      <div class="navbar-header"><a href="index.html"><img src="img/logo-1.png" alt="logo" class="hidden-xs hidden-sm"><img src="img/logo-1.png" alt="logo" class="visible-xs visible-sm"><span class="sr-only">Go to homepage</span></a>
+
+    <div id="container">
+      <div class="jumbotron">
+        <h1>Your Donation Report </h1>
+          <p>Please select a charity you'd like to view report</p>
+           <div class="form-group">
+              <label class="select">
+              <select name="charity">
+              <option value selected disabled>Select a Charity</option>
+              <option value="char1">American Red Cross</option>
+              <option value="char2">Wounded Warrior Project</option>
+              <option value="char3">Doctors Without Borders</option>
+              <option value="char4">St. Jude's Children Hospital</option>
+              <option value="char4">American Cancer Society</option>
+              <option value="char4">Save the Children</option>
+              <option value="char5">View All</option>
+              </select>
+            </label>
+
+  </div> 
+  <!--end of jumbotron-->
+
+<div id="options">
+    <div class="row">
+      <div class="col-xs-3"> </div>
+            <a href="#" data-toggle="modal" data-target="#report" class="btn navbar-btn btn-ghost">Run Report</a>
+
+</div> <!--end of container-->
+ <!-- *** SIGNUP MODAL*** -->
+       <div id="report" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+              <h4 class="modal-title text-left">John's Report:</h4>
+  
+            </div>
+
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"><strong>Charity</strong></th>
+    <th class="tg-yw4l"><strong>Dollar Amount</strong></th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"> Red Cross</td>
+    <td class="tg-yw4l"> $100.00</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"> Save the Children</td>
+    <td class="tg-yw4l"> $150.00</td>
+  </tr>
+</table>
+            </div>
+          </div>
+        </div>
+      </div>
+ <!--      *** SIGNUP MODAL END *** -->
+    
+      <footer class="footer">
+        <div class="footer__copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p>&copy;2016 Charity Case</p>
+              </div>
+              <div class="col-md-6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+<!-- Javascript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/jquery.cookie.js"> </script>
+    <script src="js/ekko-lightbox.js"></script>
+    <script src="js/jquery.simple-text-rotator.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+    <!---->
+  </body>
+</html>
