@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Simple login</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+    <script>
+      $(document).ready(function(){
+        var user,amount;
+        $("#submit").click(function(){
+          user=$("#user").val();
+          amount=$("#amount").val();
+          $.post("http://localhost:3006/login",{user: user, amount: amount}, function(data){
+            if(data==='done')
+              {
+                alert("Success");
+              }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Hello people !</h1>
+    <input type="TEXT" id="user" size="40"><br>
+    <input type="TEXT" id="amount" size="40"><br>
+    <input type="button" id="submit" value="Submit">
+  </body>
+</html>
