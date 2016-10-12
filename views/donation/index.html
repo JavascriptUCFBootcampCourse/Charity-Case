@@ -35,10 +35,10 @@
                 <p>Please select a charity and complete the fields below.</p>
                 <div class="form-group">
                     <label class="select">
-                        <select name="charity">
+                        <select name="charity" id="charitySelector">
                             <option value selected disabled>Select a Charity</option>
-                            <option value="char1">American Red Cross</option>
-                            <option value="char2">Wounded Warrior Project</option>
+                            <option value="American Red Cross">American Red Cross</option>
+                            <option value="Wounded Warrior Project">Wounded Warrior Project</option>
                             <option value="char3">Doctors Without Borders</option>
                             <option value="char4">St. Jude's Children Hospital</option>
                             <option value="char4">American Cancer Society</option>
@@ -50,12 +50,12 @@
                     <input id="donation_amount" type="text" placeholder="USD Amount" class="form-control"> -->
                     <div class="input-group" style="width:50%">
                       <span class="input-group-addon" id="basic-addon1">@</span>
-                      <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                      <input type="text" class="form-control" id="username" placeholder="Username" aria-describedby="basic-addon1">
                     </div>
                     <br />
                     <div class="input-group" style="width:50%">
                       <span class="input-group-addon">$</span>
-                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="USD Amount">
+                      <input type="text" class="form-control" id="amount" aria-label="Amount (to the nearest dollar)" placeholder="USD Amount">
                       <span class="input-group-addon">.00</span>
                     </div>
                 </div> 

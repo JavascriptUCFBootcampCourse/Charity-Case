@@ -1,13 +1,18 @@
-'use strict';
+"use strict";
 module.exports = function(sequelize, DataTypes) {
-  var Charities = sequelize.define('Charities', {
-    username: {type: DataTypes.STRING, allowNull: false}
+  var Charity = sequelize.define("Charity", {
+    name: DataTypes.STRING
   }, {
+
+    // define the table's name
+    tableName: 'Charities',
+
     classMethods: {
       associate: function(models) {
-        // associations can be defined here
+        Charity.hasMany(models.Donation, {
+        })
       }
     }
   });
-  return Charities;
+  return Charity;
 };
