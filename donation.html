@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Welcome to Charity Case</title>
+    <!-- Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="shortcut icon" href="favicon-96x96.png">
-    <!-- theme stylesheet -->
-    <link rel="stylesheet" href="css/style.css" id="theme-stylesheet">
+    <!- -->
     <link rel="stylesheet" href="css/padding_margin.css" id="theme-stylesheet">
+    <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-  
   </head>
   <body data-spy="scroll" data-target="#navigation" data-offset="120">
     <div class="navbar-header">
@@ -48,12 +47,7 @@
                 </div>
                     <!-- <input id="username" type="text" placeholder="Username" class="form-control"><br />
                     <input id="donation_amount" type="text" placeholder="USD Amount" class="form-control"> -->
-                    <div class="input-group" style="width:50%">
-                      <span class="input-group-addon" id="basic-addon1">@</span>
-                      <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <br />
-                    <div class="input-group" style="width:50%">
+                    <div class="input-group" style="width:75%">
                       <span class="input-group-addon">$</span>
                       <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="USD Amount">
                       <span class="input-group-addon">.00</span>
@@ -72,21 +66,21 @@
         </div>
     </div>
     <!-- *** SIGNUP MODAL START *** -->
-    <div id="donate-today" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
+    <div id="donate-today" tabindex="-1" role="dialog" aria-labelledby="Donate Today" aria-hidden="true" class="modal fade">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
                     <h4 class="modal-title text-left">Success!</h4>
-                </div>
-                <div class="modal-body">
-                    <p class="text-center text-muted">Your donation is greatly appreciated!</p>
-                    <p class="text-center">
-                    <button class="btn btn-primary"><i class="pe-7s-check"></i> Facebook</button>
-                    <button class="btn btn-primary"><i class="pe-7s-check"></i> Tweet</button>
-                    <p class="text-center">
-                    <a href="report.html" class="btn navbar-btn btn-ghost">Check Donation Report</a>
-                    </p>
+                    <div class="modal-body">
+                        <p class="text-center text-muted">Your donation is greatly appreciated!</p>
+                        <p class="text-center">
+                        <a href="social.html" class="btn navbar-btn btn-ghost">Facebook</a>
+                        <a href="https://twitter.com/intent/tweet" class="btn navbar-btn btn-ghost">Twitter</a>
+                        <p class="text-center">
+                        <a href="report.html" class="btn navbar-btn btn-ghost">Check Donation Report</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,7 +107,5 @@
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/front.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
-    <!---->
   </body>
 </html>

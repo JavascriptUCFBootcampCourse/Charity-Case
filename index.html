@@ -45,25 +45,40 @@
                 <li><a href="#features" class="scroll-to">Features</a></li>
                 <li><a href="#about" class="scroll-to">About Charity Case </a></li>
                 <li><a href="#testimonials" class="scroll-to">Testimonials</a></li>
-              </ul><a href="donation.html" data-target="blank" class="btn navbar-btn btn-ghost">Donate Today!</a>
+              </ul><a href="#login" data-toggle="modal" data-target="#login" class="btn navbar-btn btn-ghost">Login to Get Started</a>
             </div>
-              <div class="modal-body">
-                <form action="#" method="post">
-                  <div class="form-group">
-                    <input id="email_modal" type="text" placeholder="name@company.com" class="form-control">
-                  </div>
-                    <p class="text-center">
-                    <button class="btn btn-primary"><i class="pe-7s-magic-wand"></i> Sign up</button>
-                    </p>
-                </form>
-                    <p class="text-center text-muted">Effects present letters inquiry no an removed or friends. Desire behind latter me though in.</p>
-                </div>
-          </div>
-        </div>
-      </div>
           </div>
         </div>
       </header>
+    </div>
+    <!-- *** SIGNUP MODAL ***_________________________________________________________
+      -->
+      <div id="login" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+              <h4 class="modal-title text-center">User Login</h4>
+            </div>
+            <div class="modal-body">
+              <form action="donation.html" method="post">
+                <div class="container">
+                  <label><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+                  <br />
+                  <label><b>Password</b></label>
+                  <span style="margin-left:6px">
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  </span>
+                  <br />
+                  <button type="submit" class="btn navbar-btn btn-ghost" style="margin-left:95px;">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *** SIGNUP MODAL END ***-->
      
       <section id="intro" class="text-intro no-padding-bottom">
         <div class="container">
@@ -75,8 +90,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <p>Over 5 users have already trusted Charity Case.<br /><a href="donation.html" data-target="blank" class="btn navbar-btn btn-ghost">Donate Today!</a>
-              <a href="report.html" data-target="blank" class="btn navbar-btn btn-ghost">View Your Donation Report!</a></p>
+              <p>Over 5 users have already trusted Charity Case.<br /></p>
             </div>
           </div>
         </div>
