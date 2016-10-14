@@ -39,7 +39,7 @@ var report_controller = require('./controllers/report_controller');
 
 // instantiate our app
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 // override POST to have DELETE and PUT
 app.use(methodOverride('_method'))
