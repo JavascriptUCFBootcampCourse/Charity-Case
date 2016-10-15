@@ -49,10 +49,10 @@
                     <input id="donation_amount" type="text" placeholder="USD Amount" class="form-control"> -->
                     <div class="input-group" style="width:75%">
                       <span class="input-group-addon">$</span>
-                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="USD Amount">
+                      <input name="amt" type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="USD Amount">
                       <span class="input-group-addon">.00</span>
                     </div>
-                </div> 
+                </div>
             </center>
         </div>
     </div>
@@ -61,7 +61,7 @@
     <div id="options">
         <div class="row">
             <div class="col-md-12">
-                <center><a href="#" data-toggle="modal" data-target="#donate-today" class="btn navbar-btn btn-ghost">Donate Today!</a></center>
+                <center><a id="donateLink" href="#" data-toggle="modal" data-target="#donate-today" class="btn navbar-btn btn-ghost">Donate Today!</a></center>
             </div>
         </div>
     </div>
@@ -86,7 +86,7 @@
         </div>
     </div>
     <!-- <! *** SIGNUP MODAL END ***-->
-    <footer class="footer"> 
+    <footer class="footer">
         <div class="footer__copyright">
             <div class="container">
                 <div class="row">
@@ -97,7 +97,7 @@
             </div>
         </div>
     </footer>
- 
+
 <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"> </script>
@@ -107,5 +107,6 @@
     <script src="/assets/js/jquery.scrollTo.min.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
     <script src="/assets/js/front.js"></script>
+    <script src="/assets/js/donation.js"></script>
   </body>
 </html>

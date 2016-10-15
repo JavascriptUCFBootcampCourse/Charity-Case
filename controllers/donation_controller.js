@@ -8,15 +8,12 @@ router.get('/', function(req, res) {
 	res.sendFile(path.join(__dirname+'/../views/donation/index.html'));
 });
 router.post('/donate', function (req, res) {
-  models.Donation.create({
-    username: req.body.name,
-    charityId: req.body.sleepy,
-    user_id: req.session.user_id
-  })
-  // connect the .create to this .then
-  .then(function() {
-    res.redirect('/');
-  });
+	console.log(JSON.stringify(req.body));
+	models.Donation.create({
+		UserId: req.body.userId,
+		CharityId: req.body.charity,
+		amt: req.body.amt
+	});
 });
 
 module.exports = router;
