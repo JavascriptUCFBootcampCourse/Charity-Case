@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Charity Case</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon-96x96.png">
+    <!-- theme stylesheet -->
+    <link rel="stylesheet" href="/assets/css/padding_margin.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.default.css" id="theme-stylesheet">
+  
+  </head>
+  <body data-spy="scroll" data-target="#navigation" data-offset="120">
+    <div class="navbar-header">
+        <center>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html">
+                        <img src="/assets/img/logo-1.png" alt="logo" class="hidden-xs hidden-sm">
+                        <img src="/assets/img/logo-1.png" alt="logo" class="visible-xs visible-sm">
+                        <span class="sr-only">Go to homepage</span>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h5>Highest Donation: $25,000</h5>
+                </div>
+            </div>
+        </center>
+    </div>
+    <ul>
+      {{#each Donation}}
+        <li>
+          {{this.charity}}
+        </li>
+        <li>{{this.amt}}
+        </li>
+      {{/each}}
+    </ul>
+
+
+
+    <!-- <! *** SIGNUP MODAL END ***-->
+    <footer class="footer"> 
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy;2016 Charity Case</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+<!-- Javascript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"> </script>
+    <script src="/assets/js/jquery.cookie.js"> </script>
+    <script src="/assets/js/ekko-lightbox.js"></script>
+    <script src="/assets/js/jquery.simple-text-rotator.min.js"></script>
+    <script src="/assets/js/jquery.scrollTo.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/front.js"></script>
+   
+    <!---->
+  </body>
+</html>
