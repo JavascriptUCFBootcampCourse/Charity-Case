@@ -11,7 +11,7 @@ router.post('/donate', function (req, res) {
 	console.log(JSON.stringify(req.body));
 	models.Donation.create({
 		UserId: req.body.userId,
-		CharityId: req.body.charity,
+		charity: req.body.charity,
 		amt: req.body.amt
 	});
 });
